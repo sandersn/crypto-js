@@ -270,7 +270,7 @@ CryptoJS.lib.Cipher || (function (undefined) {
     /**
      * Cipher Block Chaining mode.
      */
-    var CBC = C_mode.CBC = (function () {
+    var CBC = (function () {
         /**
          * Abstract base CBC mode.
          */
@@ -359,6 +359,11 @@ CryptoJS.lib.Cipher || (function (undefined) {
 
         return CBC;
     }());
+
+    /**
+     * Cipher Block Chaining mode.
+     */
+    C_mode.CBC = CBC;
 
     /**
      * Padding namespace.

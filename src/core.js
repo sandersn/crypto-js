@@ -34,7 +34,7 @@ var CryptoJS = CryptoJS || (function (Math, undefined) {
     /**
      * Base object for prototypal inheritance.
      */
-    var Base = C_lib.Base = (function () {
+    var Base = (function () {
 
 
         return {
@@ -153,6 +153,11 @@ var CryptoJS = CryptoJS || (function (Math, undefined) {
             }
         };
     }());
+
+    /**
+     * Base object for prototypal inheritance.
+     */
+    C_lib.Base = Base;
 
     /**
      * An array of 32-bit words.
